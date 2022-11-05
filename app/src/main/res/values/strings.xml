@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">muchofood</string>
+    <string name="recuperar"><u>Recuperar contraseña</u></string>
 </resources>
