@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.muchofood.view.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_pizzasFragment"
+            app:destination="@id/pizzasFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sopasFragment"
+            app:destination="@id/sopasFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_platosFragment"
+            app:destination="@id/platosFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_ensaladasFragment"
+            app:destination="@id/ensaladasFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_postresFragment"
+            app:destination="@id/postresFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_bebidasFragment"
+            app:destination="@id/bebidasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pizzasFragment"
+        android:name="com.example.muchofood.view.ui.fragment.PizzasFragment"
+        android:label="fragment_pizzas"
+        tools:layout="@layout/fragment_pizzas" />
+    <fragment
+        android:id="@+id/sopasFragment"
+        android:name="com.example.muchofood.view.ui.fragment.SopasFragment"
+        android:label="fragment_sopas"
+        tools:layout="@layout/fragment_sopas" />
+    <fragment
+        android:id="@+id/platosFragment"
+        android:name="com.example.muchofood.view.ui.fragment.PlatosFragment"
+        android:label="fragment_platos"
+        tools:layout="@layout/fragment_platos" />
+    <fragment
+        android:id="@+id/ensaladasFragment"
+        android:name="com.example.muchofood.view.ui.fragment.EnsaladasFragment"
+        android:label="fragment_ensaladas"
+        tools:layout="@layout/fragment_ensaladas" />
+    <fragment
+        android:id="@+id/postresFragment"
+        android:name="com.example.muchofood.view.ui.fragment.PostresFragment"
+        android:label="fragment_postres"
+        tools:layout="@layout/fragment_postres" />
+    <fragment
+        android:id="@+id/bebidasFragment"
+        android:name="com.example.muchofood.view.ui.fragment.BebidasFragment"
+        android:label="fragment_bebidas"
+        tools:layout="@layout/fragment_bebidas" />
+</navigation>

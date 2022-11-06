@@ -92,7 +92,6 @@
         android:id="@+id/correoRegistro2"
         android:layout_width="340dp"
         android:layout_height="43dp"
-        android:layout_marginTop="280dp"
         android:background="@drawable/bordes_estilo_editext"
         android:ems="10"
         android:hint="Correo"
@@ -100,10 +99,12 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.409" />
 
     <EditText
         android:id="@+id/celularRegistro2"
