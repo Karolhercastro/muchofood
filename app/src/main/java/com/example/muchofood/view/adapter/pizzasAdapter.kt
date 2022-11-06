@@ -20,6 +20,7 @@ class pizzasAdapter: RecyclerView.Adapter<pizzasAdapter.ViewHolder> (){
         var itemImagen: ImageView
         var itemTitulo:TextView
         var itemPrecio:TextView
+
         init{
             itemImagen=itemView.findViewById (R.id.imagenPizzaCampo)
             itemTitulo=itemView.findViewById(R.id.tituloPizzaCampo)
