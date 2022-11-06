@@ -14,7 +14,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        inicioboton = findViewById(R.id.ingresar)
+        inicioboton = findViewById(R.id.recuperarBoton)
         registroboton= findViewById(R.id.registroLogin)
         recuperarcontra= findViewById(R.id.recuperarContra)
 
