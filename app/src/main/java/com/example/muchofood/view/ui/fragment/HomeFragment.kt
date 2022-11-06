@@ -21,35 +21,36 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         val cardPizza = view.findViewById<ImageView>(R.id.cardPizzas)
-        val cardSopa = view.findViewById<ImageView>(R.id.cardSopas)
-        val cardPlato = view.findViewById<ImageView>(R.id.cardPlatos)
-        val cardEnsalada = view.findViewById<ImageView>(R.id.cardEnsaladas)
-        val cardPostre = view.findViewById<ImageView>(R.id.cardPostres)
-        val cardBebida = view.findViewById<ImageView>(R.id.cardBebidas)
-
-
         cardPizza.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_pizzasFragment)
         }
 
-
+        val cardSopa = view.findViewById<ImageView>(R.id.cardSopas)
         cardSopa.setOnClickListener {
-                findNavController().navigate(R.id.action_homeFragment_to_sopasFragment)
-            }
+            findNavController().navigate(R.id.action_homeFragment_to_sopasFragment)
+        }
 
+        val cardPlato = view.findViewById<ImageView>(R.id.cardPlatos)
         cardPlato.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_platosFragment)
         }
 
+
+        val cardEnsalada = view.findViewById<ImageView>(R.id.cardEnsaladas)
         cardEnsalada.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_ensaladasFragment)
         }
 
+
+        val cardPostre = view.findViewById<ImageView>(R.id.cardPostres)
         cardPostre.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_postresFragment)
         }
 
+
+        val cardBebida = view.findViewById<ImageView>(R.id.cardBebidas)
         cardBebida.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_bebidasFragment)
         }

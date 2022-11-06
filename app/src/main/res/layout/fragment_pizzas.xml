@@ -5,13 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".view.ui.fragment.PizzasFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="741dp"
-        android:text="@string/hello_blank_fragment"
-        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/pizzasFrag"
@@ -21,5 +14,13 @@
         android:textAlignment="center"
         android:textColor="@color/yellow_main"
         android:textSize="96sp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPizzasView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </FrameLayout>
