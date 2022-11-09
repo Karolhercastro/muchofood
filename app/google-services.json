@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "858698109717",
+    "project_id": "muchofood-36aea",
+    "storage_bucket": "muchofood-36aea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858698109717:android:7fec8b6ca8f6754511cf1c",
+        "android_client_info": {
+          "package_name": "com.example.muchofood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858698109717-dpnmablki250ancucd2l7t004i4g24kv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb_VD0fRvVLDRlK-Vp2X0U8b1tKOsoXJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858698109717-dpnmablki250ancucd2l7t004i4g24kv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
