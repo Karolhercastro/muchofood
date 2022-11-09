@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import com.example.muchofood.R
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class HomeFragment : Fragment() {
@@ -56,6 +57,16 @@ class HomeFragment : Fragment() {
         }
 
 
+        val botonVarHome=view.findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        botonVarHome.setOnNavigationItemReselectedListener {
+            when (it.itemId) {
+                R.id.homeBarNav -> findNavController().navigate(R.id.action_homeFragment_to_comprasFragment)
+                R.id.comprasBarNav -> findNavController().navigate(R.id.action_homeFragment_to_comprasFragment)
+                R.id.mapaBarNav -> findNavController().navigate(R.id.action_homeFragment_to_mapFragment)
+                R.id.perfilBarNav -> findNavController().navigate(R.id.action_homeFragment_to_perfilFragment)
+
+            }
+        }
     }
 
 }
