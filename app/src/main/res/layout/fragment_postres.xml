@@ -15,4 +15,14 @@
         android:textColor="@color/yellow_main"
         android:textSize="80sp" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPostresView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
 </FrameLayout>
