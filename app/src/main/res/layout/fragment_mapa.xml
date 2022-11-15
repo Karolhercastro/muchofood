@@ -4,20 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.ui.fragment.PlatosFragment">
+    tools:context=".view.ui.fragment.MapaFragment">
 
 
     <TextView
-        android:id="@+id/platosFrag"
+        android:id="@+id/ensaladasFrag"
         android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:text="PLATOS"
+        android:layout_height="wrap_content"
+        android:text="ENSALADAS"
         android:textAlignment="center"
         android:textColor="@color/yellow_main"
-        android:textSize="96sp" />
+        android:textSize="70sp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerPlatosView"
+        android:id="@+id/recyclerEnsaladasView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="155dp"
@@ -31,5 +31,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="670dp"/>
+
 
 </FrameLayout>

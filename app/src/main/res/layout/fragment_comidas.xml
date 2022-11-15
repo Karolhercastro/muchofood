@@ -4,20 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.ui.fragment.BebidasFragment">
+    tools:context=".view.ui.fragment.ComidasFragment">
 
 
     <TextView
-        android:id="@+id/bebidasFrag"
+        android:id="@+id/pizzasFrag"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BEBIDAS"
+        android:text="PIZZAS"
         android:textAlignment="center"
         android:textColor="@color/yellow_main"
         android:textSize="96sp" />
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerBebidasView"
+        android:id="@+id/recyclerPizzasView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="155dp"
@@ -30,6 +29,8 @@
         app:menu="@menu/botonmenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@color/black"
         android:layout_marginTop="670dp"/>
 
 </FrameLayout>

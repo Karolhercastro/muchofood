@@ -5,14 +5,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.muchofood.R
 
-class pizzasAdapter: RecyclerView.Adapter<pizzasAdapter.ViewHolder> (){
+class comidaAdapter: RecyclerView.Adapter<comidaAdapter.ViewHolder> (){
     override fun onCreateViewHolder(viewGroup: ViewGroup, i:Int):ViewHolder{
-        val vistaPizzas=LayoutInflater.from(viewGroup.context).inflate(R.layout.card_view_pizzzas, viewGroup, false)
+        val vistaPizzas=LayoutInflater.from(viewGroup.context).inflate(R.layout.card_view_comidas, viewGroup, false)
         return ViewHolder(vistaPizzas)
     }
 

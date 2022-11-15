@@ -9,20 +9,18 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.muchofood.R
-import com.example.muchofood.view.adapter.ensaladasAdapter
-import com.example.muchofood.view.adapter.platosAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-class EnsaladasFragment : Fragment() {
+class MapaFragment : Fragment() {
     lateinit var recyclerEnsaladas: RecyclerView
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view= inflater.inflate(R.layout.fragment_ensaladas, container, false)
+        val view= inflater.inflate(R.layout.fragment_mapa, container, false)
         recyclerEnsaladas=view.findViewById(R.id.recyclerEnsaladasView)
-        val adapter= ensaladasAdapter()
+        val adapter= perfilesAdapter()
         recyclerEnsaladas.layoutManager= LinearLayoutManager(context)
         recyclerEnsaladas.adapter=adapter
         return view
