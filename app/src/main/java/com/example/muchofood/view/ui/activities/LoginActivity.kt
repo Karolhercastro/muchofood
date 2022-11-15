@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
 
         firebaseAuth=Firebase.auth
         val correos= findViewById<EditText>(R.id.correo)
-        val contraseñaregis=findViewById<EditText>(R.id.contrasena)
+        val contrasenregis=findViewById<EditText>(R.id.contrasena)
 
 
         inicioboton = findViewById(R.id.recuperarBoton)
@@ -33,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
         recuperarcontra= findViewById(R.id.recuperarContra)
 
         inicioboton.setOnClickListener {
-            user_login (correos.text.toString(),contraseñaregis.text.toString())
+            user_login (correos.text.toString(),contrasenregis.text.toString())
         }
 
         registroboton.setOnClickListener {
@@ -44,13 +44,15 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, RecuperarActivity::class.java))
         }
     }
-    fun user_login(correos:String, contraseñaregis:String){
-        firebaseAuth.signInWithEmailAndPassword(correos, contraseñaregis)
+    private fun user_login(correos:String, contrasenregis:String){
+        firebaseAuth.signInWithEmailAndPassword(correos, contrasenregis)
             .addOnCompleteListener(this){
                     Task-> if(Task.isSuccessful){
+                        val useres=firebaseAuth.currentUser
+                        Toast.makeText(baseContext,useres?.uid.toString(), Toast.LENGTH_LONG).show()
                 startActivity(Intent(this,HomeActivity::class.java))
             }else{
-                Toast.makeText(baseContext,"ERROR",Toast.LENGTH_LONG).show()
+                Toast.makeText(baseContext,"ERROR DATOS INCORRECTOS",Toast.LENGTH_LONG).show()
             }
             }
     }

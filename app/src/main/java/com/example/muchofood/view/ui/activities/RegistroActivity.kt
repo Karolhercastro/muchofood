@@ -14,41 +14,37 @@ import com.google.firebase.ktx.Firebase
 
 class RegistroActivity : AppCompatActivity() {
     lateinit var registrohomeboton: Button
-    lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var firebaseAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro)
-        registrohomeboton = findViewById(R.id.ingresarRegistro2)
 
-        registrohomeboton.setOnClickListener {
-            startActivity(Intent(this,HomeActivity::class.java))
-
-        }
 
         firebaseAuth=Firebase.auth
         val nombres = findViewById<EditText>(R.id.nombreRegistro)
         val apellidos= findViewById<EditText>(R.id.apellidosRegistro2)
-        val correos= findViewById<EditText>(R.id.correoRegistro2)
+        val correoReg= findViewById<EditText>(R.id.correoRegistro2)
         val celulares= findViewById<EditText>(R.id.celularRegistro2)
         val direccion= findViewById<EditText>(R.id.direccionRegistro2)
         val observacion= findViewById<EditText>(R.id.observacionesRegistro)
-        val contraseñaregis= findViewById<EditText>(R.id.contrasenaRegistro2)
-        val contraseñaConfirmar= findViewById<EditText>(R.id.contrasenaConfirmarRegistro)
+        val contrasenaregis= findViewById<EditText>(R.id.contrasenaRegistro2)
+        val contrasenaConfirmar= findViewById<EditText>(R.id.contrasenaConfirmarRegistro)
 
+        registrohomeboton = findViewById(R.id.ingresarRegistro2)
 
-        registrohomeboton=findViewById(R.id.ingresarRegistro2)
         registrohomeboton.setOnClickListener {
-            createUser(correos.text.toString(),contraseñaregis.text.toString())
+            createUser(correoReg.text.toString(),contrasenaregis.text.toString())
         }
     }
 
-    fun createUser(correos:String, contraseñaregis:String){
-        firebaseAuth.createUserWithEmailAndPassword(correos,contraseñaregis)
+    fun createUser(correoReg:String,contrasenaregis:String){
+        firebaseAuth.createUserWithEmailAndPassword(correoReg, contrasenaregis)
             .addOnCompleteListener(this){
                 Task->if(Task.isSuccessful){
+                Toast.makeText(baseContext,"Cuenta creada",Toast.LENGTH_LONG).show()
                 startActivity(Intent(this,LoginActivity::class.java))
                 }else{
-                    Toast.makeText(baseContext,"intente de nuevo",Toast.LENGTH_LONG).show()
+                    Toast.makeText(baseContext,"Intente de nuevo",Toast.LENGTH_LONG).show()
             }
             }
     }
