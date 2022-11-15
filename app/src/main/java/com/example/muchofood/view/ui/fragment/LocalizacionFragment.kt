@@ -12,18 +12,15 @@ import com.example.muchofood.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-class ComprasFragment : Fragment() {
-
+class LocalizacionFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-       return inflater.inflate(R.layout.fragment_compras, container, false)
+        return inflater.inflate(R.layout.fragment_localizacion, container, false)
 
     }
-
-
 
 
 }

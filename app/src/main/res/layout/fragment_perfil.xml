@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ui.fragment.PerfilFragment">
+
+
+    <TextView
+        android:id="@+id/perfilFrag"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:text="PERFIL"
+        android:textAlignment="center"
+        android:textColor="@color/yellow_main"
+        android:textSize="96sp" />
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        app:menu="@menu/botonmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstrains"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="670dp"/>
+
+    <ImageView
+        android:id="@+id/imagenPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/perfil" />
+
+    <Button
+        android:id="@+id/buttonCamara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="70dp"
+        android:text="Camara" />
+
+    <Button
+        android:id="@+id/buttonGaleria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="250dp"
+        android:text="Galeria" />
+
+
+</FrameLayout>

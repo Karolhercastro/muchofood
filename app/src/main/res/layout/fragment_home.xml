@@ -16,20 +16,20 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="81dp"
-            android:layout_marginLeft="20dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="32dp"
             android:layout_marginRight="20dp">
 
             <ImageView
                 android:id="@+id/imagelogotres"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:src="@drawable/logo" />
         </RelativeLayout>
 
         <ScrollView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <GridLayout
@@ -38,7 +38,7 @@
                 android:alignmentMode="alignMargins"
                 android:columnCount="2"
                 android:columnOrderPreserved="false"
-                android:rowCount="3">
+                android:rowCount="2">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
@@ -56,17 +56,17 @@
                         android:padding="16dp">
 
                         <ImageView
-                            android:id="@+id/cardPizzas"
+                            android:id="@+id/cardComida"
                             android:layout_width="125dp"
                             android:layout_height="125dp"
-                            android:src="@drawable/pizzas">
+                            android:src="@drawable/comida">
 
                         </ImageView>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Pizzas"
+                            android:text="Comida"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textSize="14sp"
@@ -93,15 +93,15 @@
                         android:padding="16dp">
 
                         <ImageView
-                            android:id="@+id/cardSopas"
+                            android:id="@+id/cardCompras"
                             android:layout_width="125dp"
                             android:layout_height="125dp"
-                            android:src="@drawable/sopas"></ImageView>
+                            android:src="@drawable/carrocompras"></ImageView>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sopas"
+                            android:text="Compras"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textSize="14sp"
@@ -128,15 +128,15 @@
                         android:padding="16dp">
 
                         <ImageView
-                            android:id="@+id/cardPlatos"
+                            android:id="@+id/cardPerfil"
                             android:layout_width="125dp"
                             android:layout_height="125dp"
-                            android:src="@drawable/platos_1"></ImageView>
+                            android:src="@drawable/perfil"></ImageView>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Platos"
+                            android:text="Perfil"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textSize="14sp"
@@ -163,15 +163,15 @@
                         android:padding="16dp">
 
                         <ImageView
-                            android:id="@+id/cardEnsaladas"
+                            android:id="@+id/cardLocalizacion"
                             android:layout_width="125dp"
                             android:layout_height="125dp"
-                            android:src="@drawable/ensaladas"></ImageView>
+                            android:src="@drawable/localizacion"></ImageView>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Ensaladas"
+                            android:text="Localizacion"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:textSize="14sp"
@@ -180,77 +180,6 @@
                         </TextView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="18dp"
-                    app:cardElevation="5dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <ImageView
-                            android:id="@+id/cardPostres"
-                            android:layout_width="125dp"
-                            android:layout_height="125dp"
-                            android:src="@drawable/postres"></ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Postres"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textSize="14sp"
-                            android:textStyle="bold">
-
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="18dp"
-                    app:cardElevation="5dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <ImageView
-                            android:id="@+id/cardBebidas"
-                            android:layout_width="125dp"
-                            android:layout_height="125dp"
-                            android:src="@drawable/bebidas_1"></ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Bebidas"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textSize="14sp"
-                            android:textStyle="bold">
-
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
 
             </GridLayout>
         </ScrollView>

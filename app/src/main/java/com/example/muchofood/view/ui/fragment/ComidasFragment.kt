@@ -14,19 +14,20 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class ComidasFragment : Fragment() {
-    lateinit var recyclerPizzas:RecyclerView
+    lateinit var recyclerComidas:RecyclerView
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-       val view= inflater.inflate(R.layout.fragment_comidas, container, false)
-        recyclerPizzas=view.findViewById(R.id.recyclerPizzasView)
+        val view=inflater.inflate(R.layout.fragment_comidas, container, false)
+        recyclerComidas=view.findViewById(R.id.recyclerViewComidas)
         val adapter=comidaAdapter()
-        recyclerPizzas.layoutManager=LinearLayoutManager(context)
-        recyclerPizzas.adapter=adapter
-        return view
+        recyclerComidas.layoutManager=LinearLayoutManager(context)
+        recyclerComidas.adapter=adapter
+       return view
+
     }
 
 

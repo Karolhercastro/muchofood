@@ -10,8 +10,8 @@ import com.example.muchofood.R
 
 class comidaAdapter: RecyclerView.Adapter<comidaAdapter.ViewHolder> (){
     override fun onCreateViewHolder(viewGroup: ViewGroup, i:Int):ViewHolder{
-        val vistaPizzas=LayoutInflater.from(viewGroup.context).inflate(R.layout.card_view_comidas, viewGroup, false)
-        return ViewHolder(vistaPizzas)
+        val vistaComidas=LayoutInflater.from(viewGroup.context).inflate(R.layout.card_view_comidas, viewGroup, false)
+        return ViewHolder(vistaComidas)
     }
 
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
@@ -20,24 +20,24 @@ class comidaAdapter: RecyclerView.Adapter<comidaAdapter.ViewHolder> (){
         var itemPrecio:TextView
 
         init{
-            itemImagen=itemView.findViewById (R.id.imagenPizzaCampo)
-            itemTitulo=itemView.findViewById(R.id.tituloPizzaCampo)
-            itemPrecio=itemView.findViewById(R.id.precioPizzaCampo)
+            itemImagen=itemView.findViewById (R.id.image)
+            itemTitulo=itemView.findViewById(R.id.titulo)
+            itemPrecio=itemView.findViewById(R.id.precio)
         }
     }
 
-    val titulosPizzas= arrayOf("Pizza de campo", "Pizza vegetariana")
-    val preciosPizzas= arrayOf("$6.000", "$6.000")
-    val imagenesPizzas= arrayOf(R.drawable.pizzacampo, R.drawable.pizzavegetariana)
+    val titulosComidas= arrayOf("Pizza individual de campo", "Pizza individual vegetariana","Sopa de verduras", "Pollo relleno")
+    val preciosComidas= arrayOf("$6.000", "$6.000" ,"$5.500", "$13.500")
+    val imagenesComidas= arrayOf(R.drawable.pizzacampo, R.drawable.pizzavegetariana, R.drawable.sopaverduras, R.drawable.pollorelleno)
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
 
-        viewHolder.itemTitulo.text=titulosPizzas[i]
-        viewHolder.itemPrecio.text=preciosPizzas[i]
-        viewHolder.itemImagen.setImageResource(imagenesPizzas[i])
+        viewHolder.itemTitulo.text=titulosComidas[i]
+        viewHolder.itemPrecio.text=preciosComidas[i]
+        viewHolder.itemImagen.setImageResource(imagenesComidas[i])
     }
 
     override fun getItemCount(): Int {
-        return titulosPizzas.size
+        return titulosComidas.size
     }
 }

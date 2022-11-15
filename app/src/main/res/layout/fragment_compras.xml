@@ -5,10 +5,16 @@
     android:layout_height="match_parent"
     tools:context=".view.ui.fragment.ComprasFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/comprasFrag"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="COMPRAS"
+        android:textAlignment="center"
+        android:textColor="@color/yellow_main"
+        android:textSize="70sp" />
+
+
+
 
 </FrameLayout>

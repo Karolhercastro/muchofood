@@ -6,25 +6,25 @@
         android:id="@+id/homeBarNav"
         android:title="Home"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_home_24" />
+        android:icon="@drawable/barrahome" />
 
 
     <item
         android:id="@+id/comprasBarNav"
         android:enabled="true"
-        android:icon="@drawable/ic_outline_compra"
+        android:icon="@drawable/barracompras"
         android:title="Compras"/>
 
     <item
         android:id="@+id/mapaBarNav"
         android:enabled="true"
-        android:icon="@drawable/ic_outline_map"
+        android:icon="@drawable/barramapa"
         android:title="Mapa"/>
 
     <item
         android:id="@+id/perfilBarNav"
         android:enabled="true"
-        android:icon="@drawable/ic_outline_person"
+        android:icon="@drawable/barraperfil"
         android:title="Pefil"/>
 
 

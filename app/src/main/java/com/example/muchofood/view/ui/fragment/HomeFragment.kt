@@ -16,48 +16,27 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view=inflater.inflate(R.layout.fragment_home, container, false)
+        val view= inflater.inflate(R.layout.fragment_home, container, false)
         return view
-    }
+            }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val cardComidas =view.findViewById<ImageView>(R.id.cardComida)
+        cardComidas.setOnClickListener{
+            findNavController().navigate(R.id.action_homeFragment_to_comidasFragment)}
 
-        val cardPizza = view.findViewById<ImageView>(R.id.cardPizzas)
-        cardPizza.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_pizzasFragment)
-        }
+        val cardCompr =view.findViewById<ImageView>(R.id.cardCompras)
+            cardCompr.setOnClickListener{
+                findNavController().navigate(R.id.action_homeFragment_to_comprasFragment)}
 
-        val cardSopa = view.findViewById<ImageView>(R.id.cardSopas)
-        cardSopa.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_sopasFragment)
-        }
+        val cardperfiles =view.findViewById<ImageView>(R.id.cardPerfil)
+                cardperfiles.setOnClickListener{
+                    findNavController().navigate(R.id.action_homeFragment_to_perfilFragment)}
 
-        val cardPlato = view.findViewById<ImageView>(R.id.cardPlatos)
-        cardPlato.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_platosFragment)
-        }
-
-
-        val cardEnsalada = view.findViewById<ImageView>(R.id.cardEnsaladas)
-        cardEnsalada.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_ensaladasFragment)
-        }
-
-
-        val cardPostre = view.findViewById<ImageView>(R.id.cardPostres)
-        cardPostre.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_postresFragment)
-        }
-
-
-        val cardBebida = view.findViewById<ImageView>(R.id.cardBebidas)
-        cardBebida.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_bebidasFragment)
-        }
-
-
-
+        val cardLocalizaciones =view.findViewById<ImageView>(R.id.cardLocalizacion)
+                    cardLocalizaciones.setOnClickListener{
+                        findNavController().navigate(R.id.action_homeFragment_to_localizacionFragment) }
     }
 
 }
