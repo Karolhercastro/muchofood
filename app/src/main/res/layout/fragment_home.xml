@@ -131,7 +131,7 @@
                             android:id="@+id/cardPerfil"
                             android:layout_width="125dp"
                             android:layout_height="125dp"
-                            android:src="@drawable/perfil"></ImageView>
+                            android:src="@drawable/perfilnuevop"></ImageView>
 
                         <TextView
                             android:layout_width="wrap_content"

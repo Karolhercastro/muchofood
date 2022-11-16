@@ -26,8 +26,8 @@ class HomeFragment : Fragment() {
         cardComidas.setOnClickListener{
             findNavController().navigate(R.id.action_homeFragment_to_comidasFragment)}
 
-        val cardCompr =view.findViewById<ImageView>(R.id.cardCompras)
-            cardCompr.setOnClickListener{
+        val cardCompre =view.findViewById<ImageView>(R.id.cardCompras)
+            cardCompre.setOnClickListener{
                 findNavController().navigate(R.id.action_homeFragment_to_comprasFragment)}
 
         val cardperfiles =view.findViewById<ImageView>(R.id.cardPerfil)
